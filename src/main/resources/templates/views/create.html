@@ -1,0 +1,22 @@
+<div class="panel-body">
+    <div class="form-group">
+        <label>First Name</label>
+        <input class="form-control" ng-model="currentItem.firstname" />
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input class="form-control" ng-model="currentItem.lastname" />
+    </div>
+    <div class="form-group">
+        <label>Salary</label>
+        <input class="form-control" ng-model="currentItem.salary" />
+    </div>
+    <div class="form-group">
+        <label>Position</label>
+        <select ng-model="selected" ng-options="position for position in positions"></select>
+        <input class="form-control" ng-model="currentItem.position=selected" ng-model-options="" />
+    </div>
+
+    <button class="btn btn-primary" ng-click="saveEdit(currentItem)">Save</button>
+    <button class="btn btn-primary" ng-click="cancelEdit()">Cancel</button>
+</div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="testerApp">
+
+<head>
+    <title>Testers</title>
+    <script src="../static/js/libraries/angular.js"></script>
+    <script src="../static/js/app.js"></script>
+    <link rel="stylesheet" href="../static/js/libraries/bootstrap.css">
+    <link rel="stylesheet" href="../static/js/libraries/bootstrap-theme.css">
+    <script src="../static/js/libraries/angular_route.js"></script>
+    <link rel="stylesheet" href="../static/css/background.css">
+
+</head>
+
+<body ng-controller="defaultCtrl">
+<div class="panel panel-primary" align="center">
+    <h3 class="panel-heading">ETPL Testers</h3>
+    <ng-include src="'views/table.html'" ng-show="currentView == 'table'" ></ng-include>
+    <ng-include src="'views/edit.html'" ng-show="currentView == 'edit'"></ng-include>
+    <!--    <ng-include src="'views/create.html'" ng-show="currentView == 'create'"></ng-include>-->
+</div>
+</body>
+</html>

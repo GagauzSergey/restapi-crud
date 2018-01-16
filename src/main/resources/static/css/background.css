@@ -1,0 +1,10 @@
+body {
+    background: #428bca url('../pics/ImagemNegcios1.jpg') no-repeat fixed center; /* Путь к фоновому изображению */
+    /*  background-repeat: no-repeat;*/
+    background-size: auto;
+}
+
+div {
+    opacity: 0.9;
+    background: white; /* Цвет фона */
+}
